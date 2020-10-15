@@ -1,0 +1,11 @@
+.task__title {
+    margin-top: 20px;
+    width : 85%;
+    height : 5%;
+}
+
+.task__desc {
+  margin-top: 20px;
+  width : 85%;
+  height : 13%;
+}

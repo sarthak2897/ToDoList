@@ -1,0 +1,38 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    flex : 0.2;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #053D5D;
+    height: 100vh;
+    /* border-radius: 10px 0 0 10px; */
+  }
+  
+  .profile > img {
+    width : 50%;
+    height: 20%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .itemlist {
+    color : #9EB5C4;
+    font-weight: 600; 
+  }
+  
+  .itemlist__item > p{
+    margin : 10px 0 10px 10px;
+  }
+
+  .itemlist__item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .itemlist__item:hover{
+      color : #577E93;
+  }

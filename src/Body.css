@@ -1,0 +1,120 @@
+.body{
+    flex : 0.5;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #F4FAFF;
+  }
+
+  
+  .task__divider{
+      width: 90%;
+      margin : 0 auto 5px auto;
+      color : black;
+  }
+
+  .body::-webkit-scrollbar{
+      display: none;
+  }
+  .heading{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .heading > h3,h4{
+      margin : 20px 20px;
+      font-weight: 500;
+      color: #053D5D;
+  }
+
+  .task__init {
+      display: flex;
+      align-items: center;
+      padding : 0 25px;
+  }
+  .task__complete{
+        background-color: #BDBDBD;
+        animation: completeTask 0.2s linear;
+
+        
+  }
+
+  @keyframes completeTask {
+      0%{
+          transform : scale(1);
+      }
+      60%{
+          transform : scale(1.1);
+      }
+      100%{
+          transform : scale(1);
+      }
+  }
+
+  .task__info {
+      padding : 20px 5px;
+     display:flex;
+     flex : 0.5;
+     word-wrap: break-word;
+     align-items: center;
+  }
+
+  .task__date{
+      display: flex;
+      flex-direction: column;
+      flex : 0.4;
+      padding : 0 10px;
+      align-items: center;
+  }
+
+  .task__edit {
+        display: flex;
+        flex : 0.1;
+  }
+
+  .task__dialogHeading{
+    margin : 20px 40px;
+    color: #053D5D;
+  }
+
+  .task__dialogBtn {
+      display: flex;
+      justify-content: flex-end;
+      margin : 10px 35px;
+  }
+
+  .task__dialogBtn Button{
+      background-color: #053D5D;
+      color : #9EB5C4;
+      padding : 15px;
+      /* border-radius: 20px; */
+      font-size: 12px;
+        font-weight: 600;
+  }
+
+.task__dialogBtn Button:hover{
+    background-color: #577E93;
+}
+  
+  .task__info  div{
+      margin : 0 5px;
+  }
+  .task__info p,.task__date p {
+      padding-bottom: 5px;
+      font-weight: 500;
+  }
+
+  .task__init:not(.task__complete):hover {
+      background-color: whitesmoke;
+  }
+
+  .task__deleteIcon,.task__editIcon{
+      color : #053D5D;
+      cursor: pointer;
+  }
+  .task__editIcon:hover,.task__deleteIcon:hover{
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.2);
+  }
+  .spinner{
+      margin : 0 50%;
+  }

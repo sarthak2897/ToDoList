@@ -1,0 +1,41 @@
+.task{
+    display : flex;
+    flex-direction: column;
+    flex : 0.3;
+    align-items: center;
+    background-color: #F4FAFF;
+    height: 100vh;
+  }
+
+  .task > h3{
+      font-weight: 600;
+      margin : 20px 0;
+      color : #7A7A7A;
+  }
+
+  .react-calendar__tile--active{
+      background: #053D5D;
+  }
+
+
+
+.task__create{
+    margin-top: 20px;
+    background-color : #053D5D;
+    padding: 15px 80px;
+    color : #9EB5C4;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    outline : none;
+}
+
+.task__create:hover{
+    background-color : #577E93;
+}
+
+.time{
+    margin-top: 20px;
+}

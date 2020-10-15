@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import Body from './Body';
+import CreateTask from './CreateTask';
+import Profile from './Profile';
 
 function App() {
+  const [newTask,setNewTask] = useState(false);
+  
+  const createNewTaskHandler = () => {
+      setNewTask(!newTask);
+      console.log("createNewTaskHandler method called");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile/>
+      <Body  task={newTask}/>
+      <CreateTask  task={newTask} taskExec={createNewTaskHandler}/>
     </div>
   );
 }
